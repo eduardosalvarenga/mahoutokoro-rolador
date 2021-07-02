@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 
 export function RollsList() {
-  const { data: rolls, mutate } = useSWR("/api/rolls", { refreshInterval: 5000 }); 
+  const { data: rolls, mutate } = useSWR("/api/rolls"); 
 
     console.log(rolls)
 

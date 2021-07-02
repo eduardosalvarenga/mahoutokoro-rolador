@@ -20,12 +20,12 @@ export const getRolls = async () => {
 };
 
 export const createRoll = async (
-  name: string,
-  action: string,
-  difficulty: number,
-  advantage: any,
-  disadvantage: any,
-  roll: any,
+  name,
+  action,
+  difficulty,
+  advantage,
+  disadvantage,
+  roll,
  ) => {
   return await fauna.query(
     q.Create(q.Collection("rolls"), {
